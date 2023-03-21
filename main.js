@@ -15,7 +15,8 @@ const cleanSentences = event => {
 const showAdvice = event => {
     event.preventDefault();
     const h1 = document.querySelector('h1');
-
+    let sentencePrefix = Math.floor(Math.random() * sentences.length)
+    h1.innerHTML = sentences[sentencePrefix];
 }
 const showOptions = event => {
     event.preventDefault();
